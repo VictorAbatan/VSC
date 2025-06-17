@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="shortcut icon" href="Recycling logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>GreenCycle Hub</title>
+ <link rel="stylesheet" href="Recycling.css">
+
+    
+</head>
+<body>
+
+<header>
+  <h1>GreenCycle Hub ♻️</h1>
+  <p>Turning Waste into Worth</p>
+</header>
+
+<form>
+  <h2>Book a Trash Pickup</h2>
+  <input type="text" placeholder="Full Name" required>
+  <input type="text" placeholder="Address" required>
+  <input type="email" placeholder="Email" required>
+  <input type="tel" placeholder="Phone Number" required>
+  <input type="number" placeholder="Trash Weight (kg)" required>
+  <input type="datetime-local" required>
+  <select required>
+    <option value="">Select Trash Type</option>
+    <option value="Plastic">Plastic</option>
+    <option value="Metal">Metal</option>
+    <option value="Organic">Organic</option>
+  </select>
+  <textarea placeholder="Additional Notes (Optional)"></textarea>
+  <p>Price: ₦<span id="price">0</span></p>
+  <button type="button" onclick="calculatePrice()">Calculate Price</button>
+  <br><br>
+  <a href="#" style="text-decoration: none;">
+    <button type="button">Proceed to Payment</button>
+  </a>
+</form>
+
+<footer>
+  <p>Customer Service: 09040402340 | Email: abatanviktor@gmail.com</p>
+</footer>
+
+<script src="Recycling.js"></script>
+
+</body>
+</html>

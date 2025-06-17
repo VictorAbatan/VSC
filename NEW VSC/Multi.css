@@ -1,0 +1,38 @@
+table{
+    border: 1px solid black; 
+    width: 90%;
+border-collapse: collapse;
+margin: 30px auto;
+
+}
+
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+  padding: 10px;
+
+  text-align: center;
+}
+
+th{
+
+    background-color: red;
+    color: white;
+}
+
+td:hover{
+    background-color: gold;
+
+}
+
+td{
+
+    background-color: darkblue;
+    color: white;
+ width: 5%;
+ 
+ 
+}
+

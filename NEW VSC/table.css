@@ -1,0 +1,30 @@
+table{
+    border: 1px solid black; 
+    width: 80%;
+border-collapse: collapse;
+margin: 20px auto;
+
+
+}
+th, td{
+    border: 1px solid black;
+    padding: 20px;
+
+
+}
+th{
+    background-color: blue; 
+     color: white;
+}
+
+
+td:hover{
+    background-color: brown;
+
+}
+tr:nth-child(even){
+
+    background-color: chartreuse;
+}
+
+

@@ -1,0 +1,39 @@
+ul li{
+
+    list-style-type:lower-roman;
+    
+}
+
+ol li{
+
+    list-style-type:disc;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+#FIRST{
+
+    background-color: blueviolet;
+
+    padding: 20PX;
+
+    margin-bottom: 50px;
+}
+    
+.SECOND{
+
+    background-color: chartreuse;
+
+    padding: 20px;
+      margin-bottom: 50px;
+}
+
+.THIRD{
+
+    background-color: darkorange;
+
+     padding: 20px;
+}
