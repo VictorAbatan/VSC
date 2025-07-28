@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCast Radio</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Vibe<span>Cast</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>VIBECAST LIVE</h1>
+      <p>Your feel-good music stream, all day long.</p>
+      <button id="toggle-play">▶️ Play Stream</button>
+    </div>
+    <audio id="player" src="https://cast1.asurahosting.com/proxy/brightb1/stream" preload="none"></audio>
+  </section>
+
+  <script>
+    const playBtn = document.getElementById('toggle-play');
+    const audio = document.getElementById('player');
+
+    let isPlaying = false;
+
+    playBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play();
+        playBtn.textContent = '⏸️ Pause Stream';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶️ Play Stream';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
